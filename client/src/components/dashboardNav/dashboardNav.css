@@ -1,0 +1,191 @@
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 120px;
+    padding: 1rem 2rem;
+    background-color: rgb(11, 1, 24);
+    color: rgb(236, 238, 245);
+    z-index: 99;
+}
+
+/* Left */
+.header-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60%;
+}
+
+.header-logo {
+    text-transform: uppercase;
+    display: flex;
+    gap:.3rem;
+    font-size: 36px;
+    font-family: 'Bebas Neue', cursive;
+    margin-right: 50px;
+}
+
+.header-socials {
+    display: flex;
+    gap:.8rem;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: capitalize;
+    align-items: flex-start;
+    gap: 1rem;
+    text-decoration: none;
+}
+
+.header-link {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.header-link:hover, .social:hover {
+    color: #af87e2;
+}
+
+
+/* Right */
+.header-right {
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+    width: 35%;
+}
+
+.header-btn {
+    margin-right: 50px;
+    background-color: rgb(34, 33, 33);
+    padding: .4rem 1rem;
+    border-radius: 5px;
+    border: 3px solid transparent;
+    transition: all .3s ease;
+}
+.header-btn:hover {
+    border: 3px solid white;
+}
+
+.header-btn2 {
+    margin-right: 20px;
+    background-color: #461c7c;;
+    padding: .4rem 1rem;
+    border-radius: 5px;
+    border: 3px solid transparent;
+    transition: all .3s ease;
+}
+.header-btn2:hover {
+    border: 3px solid #af87e2;
+}
+
+.header-btn button, .header-btn2 button {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform:uppercase;
+    background: none;
+    border: none;
+}
+
+.header-btn button a, .header-btn2 button a {
+    text-decoration: none;
+    background: none;
+    color: white;
+}
+
+.header-icons {
+    display: none;
+}
+
+
+/* Mobiles */
+@media screen and (max-width: 768px) {
+    .header-container {
+        padding: 2% 4%;
+        position: relative;
+    }
+    .header-left {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .35rem;
+        width: 50%;
+    }
+    .header-logo {
+        font-size: 24px;
+        margin-right: 0;
+    }
+    .header-nav {
+        display: none;
+    }
+
+    .header-right {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        gap: .25rem;
+        width: 45%;
+    }
+    .header-btn {
+        width: auto;
+        margin: 0;
+    }
+    .header-btn2 {
+        display: none;
+    }
+    .header-btn button, .header-btn2 button {
+        font-size: 16px;
+    }
+    .header-icons {
+        display: flex;
+    }
+    .header-responsive{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        background: rgb(2, 25, 36);
+        z-index: 99;
+        position: absolute;
+        right: 0;
+        bottom: -80px;
+        padding-top: 2rem;
+    }
+
+    .header-responsive nav{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 500;
+        gap: 1rem
+    }
+    .header-responsive-link {
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        transition: all .3s ease;
+        padding-left: 5rem;
+    }
+    
+    .header-responsive-link:hover {
+        color: #af87e2;
+    }
+    .header-responsive-icon {
+        color: white;
+        width: 20%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 1rem;
+    }
+}

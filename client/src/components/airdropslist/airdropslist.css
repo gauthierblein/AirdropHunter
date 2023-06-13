@@ -1,0 +1,35 @@
+.airdrops-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1% 5%;
+}
+
+.airdrop {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(48, 46, 49);
+    opacity: 0.8;
+    border-radius: 10px;
+    padding: 1% 2%;
+
+}
+
+.airdrop-infos {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.airdrop-infos h2 {
+    font-size: 20px;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+.airdrop img {
+    width: 80px;
+    height: 80px;
+}

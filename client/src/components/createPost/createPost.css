@@ -1,0 +1,43 @@
+.create-title {
+    font-size: 36px;
+    font-family: 'Bebas Neue', cursive;
+    width: 100%;
+    padding: 2% 5%;
+    display: flex;
+    margin-left: 0; margin-right:0 ;
+    color: rgb(201, 201, 200);
+}
+
+.form {
+    width: 100%;
+    padding: 1%;
+    border-radius: 5px;
+    border: 3px solid rgb(53, 53, 52);
+    background-color: rgb(201, 201, 200);
+    color: black;
+    font-size: 20px; font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form input, form textarea{
+    width: 100%;
+    height: auto;
+}
+
+.form button {
+    width: 40%;
+    padding: 2%;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 24px;
+    border: solid 3px gray;
+}
+
+.form button:hover {
+    cursor: pointer;
+    border: solid 3px rgb(65, 64, 64);
+    background-color: rgb(226, 224, 224);
+    transition: .3s ease;
+}
