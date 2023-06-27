@@ -24,7 +24,7 @@ function Post () {
 
   else 
   return (
-    <>
+    <div className="container">
       <Header />
       <div className='item-container'>
         <div className='item-infos'>
@@ -40,7 +40,7 @@ function Post () {
 
       </div>
 
-    </>
+    </div>
   )
   
 

@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 import './header.css'
 
 // Imported icons and images =========>
-import { FaInstagram, FaTelegram, FaTwitter } from "react-icons/fa";
-import { FaBars, FaTimes, FaDiscord } from "react-icons/fa";
+import { FaTelegram, FaTwitter } from "react-icons/fa";
+import { FaBars, FaTimes} from "react-icons/fa";
 
 
 
@@ -20,10 +20,11 @@ const Header = () => {
               <div className="header-socials">
                 <Link to={'https://twitter.com/0xFastLife'}>
                   <FaTwitter size={30} className='social' />
+                </Link >
+                <Link to={'https://t.me/FastLife0x'}>
+                  <FaTelegram size={30} className='social'/>
                 </Link>
-                <FaInstagram size={30} className='social' />
-                <FaTelegram size={30} className='social'/>
-                <FaDiscord size={30} className='social'/>
+
               </div>
               <nav className="header-nav">
                 <Link className="header-link" to="/">Home</Link>

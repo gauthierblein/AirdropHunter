@@ -57,6 +57,10 @@
     text-decoration: none;
     color: rgb(23, 23, 90);
     font-family: 'Bebas Neue';
+    transition: .3s ease;
+}
+.fast-infos-link:hover{
+    color: rgb(43, 43, 163);
 }
 
 .fast-pic{
@@ -100,4 +104,65 @@
     opacity: 1;
     border: solid 5px rgb(21, 2, 39);
     border-radius: 5px;
+}
+
+/* Mobiles */
+@media screen and (max-width: 768px) {
+
+    .home-banner , .home-banner img{
+        height: 35vw;
+    }
+
+    .home-content {
+        flex-direction: column;
+        margin-left: 0; margin-right: 0;
+    }
+
+    .home-left{
+        width: 90%;
+        margin-top: 30px;
+        margin-left: 20px; 
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .fast-pic, .fast-pic img{
+        width: 15vh;
+        height: 15vh;
+    }
+
+    .fast-infos{
+        color: white;
+        height: 20vh;
+    }
+
+    .fast-infos-link{
+        font-size: 18px;
+        color: rgb(214, 214, 218);
+    }
+    .fast-infos-link:hover{
+        color: rgb(48, 48, 63);
+        transition: .25s ease;
+    }
+
+    .home-right{
+        width: 100%;
+        margin-top: 30px;
+        padding: 2%;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .sections {
+        gap: .3rem;
+        height: 20hv;
+        width: 45%;
+        align-items: center;
+    }
+    .sections img {
+        height: 20vw;
+        width: 20vw;
+    }
+    .sections h2 {
+        width: 20vw;
+    }
 }

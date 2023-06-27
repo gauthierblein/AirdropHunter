@@ -41,3 +41,15 @@
     background-color: rgb(226, 224, 224);
     transition: .3s ease;
 }
+
+
+/* Mobiles */
+@media screen and (max-width: 768px) {
+    .create-title {
+        font-size: 26px;
+    }
+    .form button {
+        width: 60%;
+        font-size: 18px;
+    }
+}

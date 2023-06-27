@@ -12,8 +12,16 @@ body::-webkit-scrollbar{
 
 .container {
   width: 100vw;
-  height: 150vw;
+  min-height: 100vh;
+  height: auto;
   background-image: url('../src/assets/homePic.jpg');
   background-size: cover;
   font-family: 'Raleway', sans-serif;
+}
+
+/* Mobiles */
+@media screen and (max-width: 768px) {
+  .container {
+    height: auto;
+  }
 }

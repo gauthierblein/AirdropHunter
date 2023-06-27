@@ -30,9 +30,15 @@
     font-size: 18px;
     font-family: 'Bebas Neue', cursive;
     font-style: italic;
+    text-transform: lowercase;
     color: rgb(64, 10, 117);
     cursor: pointer;
     margin-bottom: 6px;
+}
+.item-infos h2:hover {
+    color: rgb(106, 25, 187);
+    text-decoration: underline;
+    transition: .3s ease;
 }
 
 .item-infos h3 {

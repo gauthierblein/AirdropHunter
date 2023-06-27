@@ -18,3 +18,14 @@
     text-decoration: underline;
     margin-bottom: 10px;
 }
+
+
+/* Mobiles */
+@media screen and (max-width: 768px) {
+    .modify-title {
+        font-size: 26px;
+    }
+    .modify-left, .modify-right {
+        width: 50%;
+    }
+}

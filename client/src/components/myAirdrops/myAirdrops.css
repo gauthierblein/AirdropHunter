@@ -12,7 +12,7 @@
 }
 
 .modal-header, .modal-body {
-    padding: 2%;
+    padding: 1%;
     display: flex;
     flex-direction: column;
 }
@@ -29,7 +29,7 @@
 .modal-footer {
     display: flex;
     gap : 5rem;
-    padding: 2%;
+    padding: 0%;
     justify-content: center;
 }
 
@@ -61,7 +61,7 @@
 .gallery-container {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
 .gallery-link {
@@ -87,7 +87,7 @@
     height: 100px;
     text-decoration: none;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .gallery-pic {
@@ -99,5 +99,44 @@
 
 .myPosts-btn-container {
     width: 60%;
+}
+
+
+/* Mobiles */
+@media screen and (max-width: 768px) {
+
+    .modal-container {
+        width: 100vw;
+        height: 80vh;
+        margin-top: 20vh;
+        left: 0;
+    }
+    .modal-body input {
+        font-size: 10px;
+    }
+
+    .gallery-link {
+        height: 200px;
+    }
+    .gallery-data {
+        font-size: 12px;
+        height: 80%;
+        align-items: start;
+        color: black;
+    }
+    .gallery-text h2 {
+        font-size: 13px;
+        font-weight: 700;
+    }
+    .gallery-text p {
+        font-size: 11px;
+        text-overflow: ellipsis;
+    }
+    .gallery-pic {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        opacity: 0.9;
+    }
 }
 

@@ -8,20 +8,9 @@
     color: white;
 }
 
-.airdrops-title {
-    font-size: 36px;
-    font-family: 'Bebas Neue', cursive;
-    width: 100%;
-    padding: 2% 5%;
-    display: flex;
-
-    margin-left: 0; margin-right:0 ;
-    color: white;
-}
-
 .airdrops-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 1rem;
     padding: 1% 5%;
 }
@@ -34,7 +23,15 @@
     border-radius: 10px;
     padding: 1% 2%;
     height: 25vh;
+    gap:1rem;
     text-decoration: none;
+    border: solid 3px transparent;
+}
+.airdrops:hover {
+    cursor: pointer;
+    border: solid 3px #af87e2;
+    opacity: .9;
+    transition: .3s ease;
 }
 
 .airdrops-infos {
@@ -51,17 +48,6 @@
     margin-bottom: 5px;
 }
 
-.airdrops-link {
-    font-size: 20px;
-    font-weight: 500;
-    margin-top: 10px;
-}
-.airdrops-link:hover {
-    cursor: pointer;
-    color: rgb(167, 101, 230);
-    transition: .3s ease;
-}
-
 .airdrops-img {
     width: 120px;
     height: 120px;
@@ -71,4 +57,55 @@
     width: 120px;
     height: 120px;
     object-fit: cover;
+}
+
+.span1 {
+    font-weight: 800;
+}
+
+.span2 {
+    margin-right: 25px;
+}
+
+.description {
+    font-size: 13px;
+    text-overflow: ellipsis;
+}
+
+/* Mobiles */
+@media screen and (max-width: 768px) {
+    .airdrops-title {
+        font-size: 24px;
+    }
+    .airdrops-container {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 1rem;
+        padding: 1% 2%;
+    }
+    .airdrops {
+        gap: .5rem;
+
+    }
+    .airdrops-infos {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .span2 {
+        margin-right: 20px;
+    }
+    
+    .airdrops-infos h2 {
+        font-size: 18px;
+        text-decoration: underline;
+        margin-bottom: 5px;
+    }
+    .airdrops-img, .airdrops-pic {
+        width: 50px;
+        height: 50px;
+    }
+    .description {
+        font-size: 11px;
+    }
+       
 }

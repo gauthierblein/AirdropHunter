@@ -10,7 +10,7 @@
 
 .news-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 1rem;
     padding: 1% 5%;
 }
@@ -58,4 +58,32 @@
     width: 120px;
     height: 120px;
     object-fit: cover;
+}
+
+
+/* Mobiles */
+@media screen and (max-width: 768px) {
+    .news-title {
+        font-size: 24px;
+    }
+    .news-container {
+        padding: 1% 2%;
+        padding: .5rem;
+    }
+    .post-infos {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    
+    .post-infos h2 {
+        font-size: 18px;
+    }
+    
+    .post-link {
+        font-size: 14px;
+    }
+    .post-img, .post-pic{
+        width: 60px;
+        height: 60px;
+    }
 }

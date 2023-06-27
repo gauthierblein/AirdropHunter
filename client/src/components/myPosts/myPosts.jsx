@@ -1,6 +1,5 @@
 import axios from 'axios'
 import { useState, useEffect } from "react"
-import { useParams } from 'react-router-dom'
 import { Button, Form } from "react-bootstrap";
 import Modal from "react-bootstrap/Modal";
 import './myPosts.css'
@@ -9,7 +8,7 @@ import './myPosts.css'
 
 function MyPosts() {
     const PF = "http://localhost:4000/uploads/";
-    const params = useParams()
+
     const [myPosts, setMyPosts] = useState(null);
     const [updatedPost, setUpdatedPost] = useState(
         {   
@@ -35,10 +34,11 @@ function MyPosts() {
         window.location.reload()
       }
 
-      const updatePost = (title, description) => {
+      const updatePost = (_id, title, description) => {
         setUpdatedPost((prev) => {
             return {
                 ...prev,
+                id: _id,
                 title: title,
                 description: description,      
             }
@@ -56,14 +56,14 @@ function MyPosts() {
         });
       };
 
-      const saveUpdatedPost = (title, description, id) => {
-
+      const saveUpdatedPost = () => {
         axios.put(`http://localhost:4000/updatepost/${updatedPost.id}`, updatedPost)
             .then((res) => console.log(res))
             .catch((err) => console.log(err))
         handleClose();
       window.location.reload()
-      }
+      
+    }
             
       if (!myPosts) return ("pas d annonce créée");
     
@@ -107,7 +107,7 @@ function MyPosts() {
                           <img src={PF + post.cover} className="gallery-pic" alt='' />
                         </div>
                         <div className='myPosts-btn-container'>
-                          <button className="myPosts-buttons" onClick={() => updatePost(post.title, post.description, post._id)} >Modify</button>
+                          <button className="myPosts-buttons" onClick={() => updatePost(post._id, post.title, post.description)} >Modify</button>
                           <button className="myPosts-buttons" onClick={() => deletePost(post._id)}>Delete</button>
                         </div>
                       </div>

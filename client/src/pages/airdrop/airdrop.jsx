@@ -26,12 +26,12 @@ function Airdrop () {
 
   else 
   return (
-    <>
+    <div className="container">
       <Header />
       <div className='item-container'>
         <div className='item-infos'>
           <h1>{product.title}</h1>
-          <h2>{product.price}</h2>
+          <h2>{product.link}</h2>
           <h3>{product.description}</h3>
         </div>
 
@@ -42,7 +42,7 @@ function Airdrop () {
 
       </div>
 
-    </>
+    </div>
   )
   
 

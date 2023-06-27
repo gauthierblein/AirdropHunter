@@ -40,11 +40,12 @@ const Airdrops = () => {
                     <div className='airdrops-infos'>
                         <h2>{post.title}</h2>
                         <div>
-                                <span className='blockchain'>{post.blockchain}</span><span>{post.category}</span><br />
-                                <span>Estimated time :</span><span>{post.duration}</span><br />
-                                <span>Cost :</span><span>{post.price}</span>
+                            <span className='span1'>Blockchain : </span><span className='span2'>{post.blockchain}</span>
+                            <span className='span1'>Type : </span><span className='span2'>{post.category}</span>
+                            <span className='span1'>Estimated time : </span><span className='span2'>{post.duration}</span >
+                            <span className='span1'>Cost : </span><span>{post.price}</span>    
                         </div>
-                        <p>{post.description}</p>
+                        <p className='description'>{post.description}</p>
                     </div>
                     <div className='airdrops-img'>
                         <img src={PF + post.cover} className="airdrops-pic" alt='' />
